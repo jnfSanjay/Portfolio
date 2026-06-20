@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
         rel="stylesheet">
     <style>
+        body {
+    user-select: none;
+}
         :root {
             --primary: #7C3AED;
             --primary-glow: #8B5CF6;
@@ -1544,7 +1547,7 @@
                 </div>
                 <div class="col-lg-5 text-center mt-5 mt-lg-0">
                     <div class="hero-image-wrap">
-                        <img src="profile.png" alt="Sanjay U - Python Developer">
+                        <img src="prof1.png" alt="Sanjay U - Python Developer">
                         <div class="hero-float-card card1"><i class="fab fa-python"></i> Python Expert</div>
                         <div class="hero-float-card card2"><i class="fas fa-code"></i> Full-Stack Dev</div>
                     </div>
@@ -2027,7 +2030,7 @@
                         <div class="icon-circle"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h6>Email</h6>
-                            <p class="mb-0">sanjay@example.com</p>
+                            <p class="mb-0">sanjay29@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -2036,7 +2039,7 @@
                         <div class="icon-circle"><i class="fab fa-linkedin-in"></i></div>
                         <div>
                             <h6>LinkedIn</h6>
-                            <p class="mb-0">linkedin.com/in/sanjay</p>
+                            <p class="mb-0">www.linkedin.com/in/sanjay-u-b387133ba</p>
                         </div>
                     </div>
                 </div>
@@ -2049,9 +2052,7 @@
         <div class="container text-center">
             <div class="d-flex gap-3 justify-content-center mb-3">
                 <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="www.linkedin.com/in/sanjay-u-b387133ba" class="social-link"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <p style="margin:0;font-size:.85rem;color:var(--text-muted)">
                 &copy; <span id="currentYear"></span> Sanjay U. All rights reserved.
@@ -2329,6 +2330,22 @@
                 }
             }, 1800);
         });
+
+
+
+        document.addEventListener('contextmenu', e => {
+    e.preventDefault();
+});
+
+document.addEventListener('keydown', function(e) {
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && e.key.toUpperCase() === 'U')
+    ) {
+        e.preventDefault();
+    }
+});
     </script>
 </body>
 
